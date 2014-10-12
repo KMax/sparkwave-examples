@@ -1,0 +1,23 @@
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX ssn: <http://http://purl.oclc.org/NET/ssnx/ssn#>
+PREFIX dul: <http://www.loa-cnr.it/ontologies/DUL.owl#>
+
+EPSILON_ONTOLOGY = "target/test-classes/epsilon/knosis-epsilon.owl"
+
+STATIC_INSTANCES = "null"
+
+HANDLERS {
+    HANDLER {
+        "class" = "ru.kolchinmax.sparkwave.handler.ConstructHandler"
+        "name" = "SimpleQueries#simple"
+    }
+}
+
+CONSTRUCT {
+    ?x rdf:type dul:Event .
+}
+
+WHERE {
+    ?x rdf:type ssn:Observation .
+    TIMEWINDOW (150)
+}
