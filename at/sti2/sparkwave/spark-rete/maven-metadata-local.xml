@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>at.sti2.sparkwave</groupId>
+  <artifactId>spark-rete</artifactId>
+  <versioning>
+    <release>0.5.1</release>
+    <versions>
+      <version>0.5.1</version>
+    </versions>
+    <lastUpdated>20141121111025</lastUpdated>
+  </versioning>
+</metadata>

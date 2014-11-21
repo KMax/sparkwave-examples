@@ -1,2 +1,6 @@
 target
 *.log
+**/_remote.repositories
+**/resolver-status.properties
+**/maven-metadata-internal.repo.xml
+**/maven-metadata-internal.repo.xml.sha1
